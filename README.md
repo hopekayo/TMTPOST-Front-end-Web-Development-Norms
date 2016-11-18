@@ -19,17 +19,18 @@
 * 对于属性的定义，确保全部使用双引号，绝不要使用单引号。
 * 不要在自闭合（self-closing）元素的尾部添加斜线 -- [HTML5 规范](href "http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag")中明确说明这是可选的。
 * 不要省略可选的结束标签（例如，\</li> 或 \</body>）。
-
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Page title</title>
-		</head>
-		<body>
-			<img src="images/company-logo.png" alt="Company">
-			<h1 class="hello-world">Hello, world!</h1>
-		</body>
-	</html>
+	
+		<!DOCTYPE html>
+		<html>
+			<head>
+				<title>Page title</title>
+			</head>
+			<body>
+				<img src="images/company-logo.png" alt="Company">
+				<h1 class="hello-world">Hello, world!</h1>
+			</body>
+		</html>
+	
 ***
 ####HTML5 doctype
 为每个 HTML 页面的第一行添加标准模式（standard mode）的声明，这样能够确保在每个浏览
@@ -43,10 +44,11 @@
 ***
 ####语言属性
 根据 HTML5 规范：
-	<html lang="zh-CN">
-		<!-- ... -->
-	</html>
 
+		<html lang="zh-CN">
+			<!-- ... -->
+		</html>
+	
 ####基本meta信息
 好的meta，对呀页面的seo和不同浏览器的呈现一致性非常重要，页面中必须包含的mete信息如下，
 
@@ -270,7 +272,7 @@ demo：
 ###JS 编码规范：
 
 * 文件编码统一为utf-8, 书写过程过, 每行代码结束必须有分号;
-* 命名语义化, 尽可能利用英文单词或其缩写(驼峰式);
+* 命名语义化, 尽可能利用英文单词或其缩写(驼峰式或下划线);
 * 引入jQuery库,库和插件的命名规则为 库名称-版本号-是否为压缩.js 
 * 常量, 使用全部字母大写，单词间下划线分隔的命名方式。
 * boolean 类型的变量使用 is 或 has 开头。
@@ -325,7 +327,7 @@ demo：
 
 ####js 性能优化
 
-* 浏览器遍历 DOM 元素的代价是昂贵的。 简化DOM和较少不必要DOM操作
+* 浏览器遍历 DOM 元素的代价是昂贵的。 简化DOM和减少不必要DOM操作
 * 异步加载第三方内容 为script增加 async（仅适用于外部脚本）
 * 尽量不使用 animate() 方法
 * 避免使用 eval()，setTimeOut使用调用函数
