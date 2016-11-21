@@ -1,4 +1,5 @@
-# TMTPOST-Front-end-Web-Development-Norms 钛媒体前端开发规范
+
+#钛媒体前端开发规范
 ![TMTPOST](http://www.tmtpost.com/public/css/img/tmt_logo.png)
 
 本文为钛媒体[TMTPOST](http://www.tmtpost.com)前端开发团队遵循和约定的开发规范，为了提高代码的规范性和可维护性，望相关人员准守并维护本规范。
@@ -50,7 +51,7 @@
 		</html>
 	
 ####基本meta信息
-好的meta，对呀页面的seo和不同浏览器的呈现一致性非常重要，页面中必须包含的mete信息如下，
+好的meta，对页面的seo和不同浏览器的呈现一致性非常重要，页面中必须包含的mete信息如下，
 
 字符编码
 
@@ -67,6 +68,7 @@ IE 兼容模式 设置为edge
 	<meta name="keywords" content="a,b,c">//关键字,“，”分隔
 
 内容终端页设置author
+
 	<meta name="author" content="hopekayo, hopekayo@gmail.com">
 
 为移动设备添加viewport
@@ -129,7 +131,7 @@ img标签必须设置alt属性，a标签当标签内非文字时必须设置titl
 		<div class="click left contentWrapper "></div>
 
 		<!-- Recommended -->
-		<div id="js-click" class="sidebar content-wrapper"></div>
+		<div class="sidebar content-wrapper" id="js-click"></div>
 
 ####减少标签的数量
 编写 HTML 代码时，尽量避免多余的父元素。
@@ -314,6 +316,7 @@ demo：
 		 // Not recommended
 		$("#myDiv").addClass("error");
 		$("#myDiv").show();
+
 		// Recommended
 		$("#myDiv").addClass("error").show();
 * 当链式写法超过三次或者因为事件绑定变得复杂后，使用换行和缩进保持代码可读性；
@@ -368,7 +371,8 @@ demo：
 	@time:           2016-12-19 2:10 PM
 	*/
 简写 
-	// by hopekayo@gmail.com  实现某某功能 2016-12-19 2:10
+
+	// add by hopekayo@gmail.com  实现某某功能 2016-12-19 2:10
 ****
 
 ###活动页面制作规范
