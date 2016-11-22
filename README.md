@@ -21,7 +21,6 @@
 ***
 <h3 id="html"></h3>
 ### HTML编码规范
-***
 #### 语法
 
 * 用两个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。
@@ -69,6 +68,11 @@
 IE 兼容模式 设置为edge 
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+双核浏览器使用webkit内核
+
+	<meta name="renderer" content="webkit">
+
 
 页面的tdk信息
 
@@ -181,6 +185,7 @@ a 不允许嵌套 div这种约束属于语义嵌套约束，与之区别的约�
 通常情况下，每个标签都是有语义的，此外语义化的 HTML 结构，有助于机器（搜索引擎）理解，另一方面多人协作时，能迅速了解开发者意图。
 
 * 尽量使用语言话标签， 如  article aside details figcaption figure footer header main mark nav section summary time
+* 使用[modernizr](https://modernizr.com/)完成新特性检测和兼容（包括css的新特性）
 * 尽量使用语义化的属性值 
 
 
@@ -348,7 +353,7 @@ demo：
 * 尽量不使用 animate() 方法
 * 避免使用 eval()，setTimeOut使用调用函数
 * 只使用一次的函数使用匿名函数
-* 禁止使用 slideUp/Down() fadeIn/fadeOut() 等方法；
+* 避免使用 slideUp/Down() fadeIn/fadeOut() 等方法；
 * 缓存数组长度
 
 		var arr = new Array(1000),
