@@ -4,21 +4,30 @@
 
 本文为钛媒体[TMTPOST](http://www.tmtpost.com)前端开发团队遵循和约定的开发规范，为了提高代码的规范性和可维护性，望相关人员准守并维护本规范。
 
+书写所有人都可以看的懂的代码. 简洁易懂是一种美德.
+
 本文会根据实际使用情况不断的进行维护更新！
 
 2016年11月16日 下午12:18:37
 ## 规范内容
+* [HTML编码规范](#html)
+* [Css编码规范](#css)
+* [JavaScript编码规范](#javascript)
+* [活动页面制作规范](#event)
+* [EDM页面制作规范](#edm)
+
+
+
 ***
-
 ### HTML编码规范
-
+<h3 id="html"></h3>
 ***
 #### 语法
 
 * 用两个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。
 * 嵌套元素应当缩进一次（即两个空格）。
 * 对于属性的定义，确保全部使用双引号，绝不要使用单引号。
-* 不要在自闭合（self-closing）元素的尾部添加斜线 -- [HTML5 规范](href "http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag")中明确说明这是可选的。
+* 不要在自闭合（self-closing）元素的尾部添加斜线 -- [HTML5 规范](http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag)中明确说明这是可选的。
 * 不要省略可选的结束标签（例如，\</li> 或 \</body>）。
 	
 		<!DOCTYPE html>
@@ -177,6 +186,7 @@ a 不允许嵌套 div这种约束属于语义嵌套约束，与之区别的约�
 
 ****
 ### CSS编码规范
+<h3 id="css"></h3>
 
 ####代码组织
 * CSS换行制表：使用 4 个空格，而非[tab];
@@ -271,7 +281,8 @@ demo：
 	}
 
 ****
-###JS 编码规范：
+###JavaScript 编码规范：
+<h3 id="javascript"></h3>
 
 * 文件编码统一为utf-8, 书写过程过, 每行代码结束必须有分号;
 * 命名语义化, 尽可能利用英文单词或其缩写(驼峰式或下划线);
@@ -285,7 +296,7 @@ demo：
 * 推荐使用'use strict'，严格模式避免很多错误。
 * 减少html 中的js的代码，除非相对独立的功能
 
-* 推动es6，使用[babel](href 'https://babeljs.io/')解决兼容性
+* 推动es6，使用[babel](https://babeljs.io/)解决兼容性
 
 #### jquery 使用规范
 * jQuery变量要求首字符为 '$', 私有变量:首字符为'_'; 要求变量集中声明, 避免全局变量.
@@ -370,13 +381,31 @@ demo：
 	@description:    content整理后
 	@time:           2016-12-19 2:10 PM
 	*/
-简写 
+
+可简写为
 
 	// add by hopekayo@gmail.com  实现某某功能 2016-12-19 2:10
+
+####方法和代码块注释
+
+实现某个功能的方法或代码块加注释；
+
+	/**
+	 * [client description]
+	 * @author hopekayo@gmail.com
+	 * @DateTime 2016-11-22T13:42:42+0800
+	 * @return   [type]                   [description]
+	 */
+
+#### 特别算法、特殊处理、等重点代码加注释
+给复杂的代码加注释可以让人快速看懂代码逻辑
+
+
 ****
 
-###活动页面制作规范
+###活动页面制作规范 待写
+<h3 id="event"></h3>
 
-###EDM页面制作规范
-
+###EDM页面制作规范 待写
+<h3 id="event"></h3>
 	
