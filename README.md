@@ -90,7 +90,7 @@ IE 兼容模式 设置为edge
 * device-width: 设备分辨率宽度，输出设备的屏幕可见宽度；
 * initial-scale: 初始缩放比例；
 * maximum-scale: 最大缩放比例；
-
+	
 	<meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
